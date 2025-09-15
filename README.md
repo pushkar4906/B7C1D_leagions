@@ -23,7 +23,17 @@ Welcome to the official repository for Analogy Nexus, a web-based tool designed 
       <img width="1887" height="921" alt="image" src="https://github.com/user-attachments/assets/dbdfbc89-66d9-41a6-937a-6f36ecef6d51" />
 
 ---
+Our Analogy Generator
+At the heart of Analogy Nexus is a powerful, AI-driven engine designed for creativity and clarity. We've gone beyond basic models to create a tool that understands nuance and context.
 
+Advanced AI Core:
+Utilizes a fine-tuned version of the latest Large Language Models (LLMs), trained specifically on a diverse dataset of metaphorical and comparative language.
+Audience-Aware Logic:
+The generator doesn't just simplify; it translates. It considers the selected audience's presumed knowledge base, adjusting the complexity and domain of the analogy accordingly.
+Creative & Contextual:
+You can guide the tone from professional to playful. The AI maps the core attributes of your concept to various domains—like nature, technology, or everyday life—to find the most intuitive comparison.
+Constantly Learning:
+Our system is updated regularly, learning from user interactions to refine its ability to generate even more effective and insightful analogies over time.
 ## 🛠️ Tech Stack
 
 -   **HTML5:** For the core structure and content.
