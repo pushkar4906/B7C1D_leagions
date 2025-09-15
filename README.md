@@ -3,7 +3,7 @@
 
 Welcome to the official repository for Analogy Nexus, a web-based tool designed to make complex topics understandable through the power of analogy. This project is a front-end implementation of the user interface.
 
-**Live Demo:** [Link to your deployed website] *(You can add this later when you host it)*
+**Live Demo:** file:///D:/123/hello.html#faq 
 <img width="1886" height="919" alt="image" src="https://github.com/user-attachments/assets/aa004a69-e25c-4799-bd71-c8a58526be45" />
 
 
