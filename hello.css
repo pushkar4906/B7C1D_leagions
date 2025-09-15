@@ -1,0 +1,383 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ece9e6, #ffffff); /* Light gradient background */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3f51b5; /* Deeper blue */
+    color: #fff;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffeb3b; /* Yellow accent for logo */
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.8rem;
+    margin: 0;
+}
+
+.navbar .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.navbar .nav-links li a:hover {
+    color: #ffeb3b; /* Yellow on hover */
+    transform: translateY(-2px);
+}
+
+header {
+    background: linear-gradient(45deg, #64b5f6, #42a5f5); /* Blue gradient header */
+    text-align: center;
+    padding: 3rem 2rem;
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header p {
+    margin: 0.8rem 0 0;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 1rem;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+}
+
+.hero h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    color: #3f51b5; /* Matching navbar blue */
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 2.5rem;
+    color: #555;
+}
+
+.btn {
+    background: linear-gradient(45deg, #ff7043, #ff5722); /* Orange gradient button */
+    color: #fff;
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    border-radius: 50px; /* Pill-shaped button */
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background: linear-gradient(45deg, #ff5722, #e64a19);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+section {
+    padding: 3rem;
+    background-color: #ffffff;
+    margin: 1.5rem auto;
+    max-width: 1000px;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+section h2 {
+    margin-top: 0;
+    color: #3f51b5; /* Matching navbar blue */
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.cards {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    flex: 1;
+    min-width: 280px; /* Ensure cards don't get too small */
+    background-color: #fcfcfc;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.07);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-top: 5px solid; /* Placeholder, color will be set per card */
+}
+
+.card:nth-child(1) { border-color: #4caf50; } /* Green for students */
+.card:nth-child(2) { border-color: #ff9800; } /* Amber for business */
+.card:nth-child(3) { border-color: #9c27b0; } /* Purple for writers */
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card img { /* Styles for your new images */
+    width: 100%;
+    max-height: 200px; /* Limit image height */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.card h3 {
+    font-size: 1.7rem;
+    color: #444;
+    margin-bottom: 1rem;
+}
+
+.icon { /* Removed as images are replacing Font Awesome icons */
+     font-size: 3rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    background: #e0e0e0;
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+
+.steps {
+    list-style: none;
+    padding: 0;
+}
+
+.steps li {
+    margin: 1.5rem 0;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #f9f9f9;
+    padding: 1rem 1.5rem;
+    border-left: 5px solid #4CAF50; /* Green accent for steps */
+    border-radius: 8px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
+    transition: border-left-color 0.3s ease-in-out;
+}
+
+.steps li:nth-child(2) { border-left-color: #FF9800; } /* Amber */
+.steps li:nth-child(3) { border-left-color: #2196F3; } /* Blue */
+
+.steps li strong {
+    color: #3f51b5;
+    font-size: 1.25rem;
+}
+
+.steps .icon {
+    font-size: 2.2rem;
+    color: #3f51b5;
+}
+
+#faq ul {
+    list-style: none;
+    padding: 0;
+}
+
+#faq li {
+    background-color: #fefefe;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid #7986cb; /* Lighter blue accent */
+}
+
+#faq li strong {
+    color: #3f51b5;
+    font-size: 1.15rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+
+footer {
+    background-color: #3f51b5; /* Matching navbar blue */
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1.1rem;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    section {
+        padding: 2rem 1rem;
+    }
+}
+
+/* Styles for Generator Features Section */
+#generator-features {
+    background-color: #f4f7fc; /* A slightly different light blue background */
+}
+
+.feature-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.feature-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.feature-text ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1.5rem;
+}
+
+.feature-text li {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 1.2rem;
+    font-size: 1.05rem;
+}
+
+.feature-icon {
+    font-size: 1.5rem;
+    color: #3f51b5; /* Matching theme color */
+    margin-top: 4px;
+}
+
+.feature-image {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.feature-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for Expanded FAQ Section */
+#faq ul {
+    list-style: none;
+    padding: 0;
+}
+
+#faq li {
+    background-color: #ffffff;
+    margin-bottom: 1.2rem;
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    border-left: 5px solid #7986cb;
+    transition: all 0.3s ease;
+}
+
+#faq li:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-left-color: #3f51b5;
+}
+
+#faq strong {
+    color: #3f51b5;
+    font-size: 1.25rem;
+    display: block;
+    margin-bottom: 0.75rem;
+    cursor: pointer; /* Optional: if you add interactivity later */
+}
+
+#faq p {
+    margin: 0;
+    color: #555;
+    line-height: 1.7;
+}
+
+/* Responsive adjustments for new sections */
+@media (max-width: 768px) {
+    .feature-container {
+        flex-direction: column-reverse; /* Stack image on top on mobile */
+    }
+}
